@@ -60,7 +60,7 @@ export default function Home({ exploreData, cardsData }) {
   );
 }
 
-// Only works under /pages, server rendering
+// Only works under /pages, server rendering, Fetch data at build time
 export async function getStaticProps() {
   const exploreData = await getData("https://jsonkeeper.com/b/4G1G");
   const cardsData = await getData("https://jsonkeeper.com/b/VHHT");
