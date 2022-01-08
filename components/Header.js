@@ -67,7 +67,10 @@ export default function Header({ placeholder }) {
           placeholder={placeholder || "Where are you going?"}
         />
         {/* Applies to medium screens only > 768px */}
-        <SearchIcon className="hidden md:inline-flex md:mx-2 h-8 bg-red-400 text-white rounded-full p-1.5 cursor-pointer" />
+        <SearchIcon
+          onClick={search}
+          className="hidden md:inline-flex md:mx-2 h-8 bg-red-400 text-white rounded-full p-1.5 cursor-pointer"
+        />
       </div>
 
       {/* Right -  */}
