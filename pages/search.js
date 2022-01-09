@@ -12,19 +12,15 @@ export default function Search({ searchResults }) {
 
   const fcheckIn = format(new Date(checkIn), "dd MMMM yy");
   const fcheckOut = format(new Date(checkOut), "dd MMMM yy");
+  const range = `${fcheckIn} - ${fcheckOut}`;
 
   return (
     <div>
-      <Header
-        placeholder={`${location} | ${fcheckIn} - ${fcheckOut} | ${guests} guests`}
-      />
+      <Header placeholder={`${location} | ${range} | ${guests} guests`} />
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
           <p className="text-xs">
-            500+ Stays -{" "}
-            <span className="p-1 rounded-xl bg-red-100">{fcheckIn}</span> to{" "}
-            <span className="p-1 rounded-xl bg-red-100">{fcheckOut}</span> for{" "}
-            {guests} guests
+            500+ Stays - {range} for {guests} guests
           </p>
 
           <h1 className="text-3xl font-semibold mt-2 mb-6">

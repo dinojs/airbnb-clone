@@ -26,7 +26,9 @@ export default function MobileNav() {
           <Home /> Home
         </div>
         <div
-          className={`item ${router.pathname === "/search" ? "active" : null}`}
+          className={`item ${
+            router.pathname.includes("/search") ? "active" : null
+          }`}
         >
           <Search /> Explore
         </div>

@@ -118,6 +118,8 @@ export default function Header({ placeholder }) {
           <a href="#">Online Experiences</a>
         </nav>
 
+        {/* <MobileNav /> */}
+
         <form className="search">
           <input
             type="text"
@@ -210,7 +212,6 @@ export default function Header({ placeholder }) {
             <User className="userIcon" />
           </div>
         </div>
-        <MobileNav />
       </div>
     </HeaderSection>
   );
