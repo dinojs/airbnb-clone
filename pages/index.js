@@ -48,7 +48,7 @@ export default function Home({ exploreData, cardsData }) {
         </section>
 
         <LargeCard
-          img="https://a0.muscache.com/im/pictures/2da67c1c-0c61-4629-8798-1d4de1ac9291.jpg?im_w=1440"
+          img="https://www.gensh.in/wallpaper/genshin/genshin_19_4K.jpg"
           title="The Greatest Outdoors"
           description="Wishlist curated by Dino"
           buttonText="Get Inspired"

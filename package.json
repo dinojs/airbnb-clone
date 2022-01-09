@@ -8,13 +8,18 @@
   "dependencies": {
     "@badrap/bar-of-progress": "^0.1.2",
     "@heroicons/react": "^1.0.5",
+    "@react-hook/media-query": "^1.1.1",
+    "@tailwindcss/typography": "^0.5.0",
     "date-fns": "^2.28.0",
     "geolib": "^3.3.3",
     "next": "latest",
     "react": "^17.0.2",
     "react-date-range": "^1.4.0",
     "react-dom": "^17.0.2",
+    "react-feather": "^2.0.9",
+    "react-is": "^17.0.2",
     "react-map-gl": "^6.1.18",
+    "styled-components": "^5.3.3",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {

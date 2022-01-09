@@ -5,6 +5,7 @@ module.exports = {
       "a0.muscache.com",
       "jsonkeeper",
       "links.papareact.com",
+      "www.gensh.in",
     ],
   },
   env: {

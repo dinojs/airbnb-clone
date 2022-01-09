@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <div className="relative h-[300px] sm-[400px] l-[500px] xl-[600px] 2xl-[700px]">
+    <div className="relative h-[400px] sm-[500px] l-[700px] xl-[800px] 2xl-[900px]">
       <Image
-        src="https://a0.muscache.com/im/pictures/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg"
+        src="https://www.gensh.in/wallpaper/genshin/genshin_02_4K.jpg"
         layout="fill"
         objectFit="cover"
       />

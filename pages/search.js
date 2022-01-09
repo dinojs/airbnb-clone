@@ -8,20 +8,23 @@ import Map from "../components/Map";
 export default function Search({ searchResults }) {
   const router = useRouter();
 
-  const { location, startDate, endDate, nGuests } = router.query;
+  const { location, checkIn, checkOut, guests } = router.query;
 
-  const fStartDate = format(new Date(startDate), "dd MMMM yy");
-  const fEndDate = format(new Date(endDate), "dd MMMM yy");
-  const range = `${fStartDate} - ${fEndDate}`;
+  const fcheckIn = format(new Date(checkIn), "dd MMMM yy");
+  const fcheckOut = format(new Date(checkOut), "dd MMMM yy");
 
   return (
     <div>
-      <Header placeholder={`${location} | ${range} | ${nGuests} guests`} />
-
+      <Header
+        placeholder={`${location} | ${fcheckIn} - ${fcheckOut} | ${guests} guests`}
+      />
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
           <p className="text-xs">
-            500+ Stays - {range} for {nGuests} guests
+            500+ Stays -{" "}
+            <span className="p-1 rounded-xl bg-red-100">{fcheckIn}</span> to{" "}
+            <span className="p-1 rounded-xl bg-red-100">{fcheckOut}</span> for{" "}
+            {guests} guests
           </p>
 
           <h1 className="text-3xl font-semibold mt-2 mb-6">
@@ -59,7 +62,6 @@ export default function Search({ searchResults }) {
           <Map searchResults={searchResults} />
         </section>
       </main>
-
       <Footer />
     </div>
   );
