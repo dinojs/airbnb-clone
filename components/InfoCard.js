@@ -18,7 +18,7 @@ export default function InfoCard({
     hover:opacity-80 hover:shadow-lg transition duration-200 ease-out
     first:border-t"
     >
-      <div className="relative w-40 h-24 md:w-80 md:h-52 flex-shrink-0">
+      <div className="relative w-40 h-32 md:w-80 md:h-52 flex-shrink-0">
         {/* cover: zoom in instead of stretch */}
         <Image
           src={img}
@@ -46,10 +46,14 @@ export default function InfoCard({
             <StarIcon className="h-5 text-red-400" /> {star}
           </p>
 
-          <div>
-            <p className="text-lg lg:text-2xl font-semibold pb-2">{price}</p>
+          <div className="flex flex-col">
+            <p className="text-lg lg:text-2xl font-semibold pl-2 md:pb-2 md:pl-0">
+              {price}
+            </p>
 
-            <p className="text-right font-extralight">{total}</p>
+            <p className="hidden md:inline-flex text-right font-extralight">
+              {total}
+            </p>
           </div>
         </div>
       </div>
