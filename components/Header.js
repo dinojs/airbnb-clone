@@ -118,7 +118,7 @@ export default function Header({ placeholder }) {
           <a href="#">Online Experiences</a>
         </nav>
 
-        {/* <MobileNav /> */}
+        <MobileNav />
 
         <form className="search">
           <input
